@@ -20,7 +20,7 @@ body{
 .banner{
     text-align:center;
     font-size: 1.4rem;
-    background-image: linear-gradient(blue,white);
+    background-image: linear-gradient(red,white);
     border-radius: 50px;
     margin-bottom: 10px;
     position:fixed;
