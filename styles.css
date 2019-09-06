@@ -4,103 +4,69 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Aug 2, 2019, 2:30:15 PM
-    Author     : urk17cs231
+    Created on : Sep 6, 2019, 4:01:16 PM
+    Author     : urk17cs253
 */
-*{
-    margin:0;
-   
-}
 
-header{
-   
-    text-align:center;
-    font-family: sans-serif;
-    color:white;
-}
-.headtext{
-    font-size:3em;
-    padding:20px;
-    text-shadow: 3px 5px black;
-}
-.head{
-     background-color:#003399;
-}
-.navbar{
-    text-align: center;
-}
-nav{
-    background-color:#99ff99;
-    padding:0.7%
-}
-ul{
-    list-style-type: none;
-    padding:0;
-}
-ul a{
-   text-decoration: none;
-   padding: 0.7%  30px;
-   height: 100%;
-}
-ul a:hover{
-   
-    background-color: #293462;
-    color:white;
-    transition:0.5s;
-    border-radius: 10px;
-}
-li{
-    
-    display:inline;
-    padding: 100px;
-}
-.banner{
-    background-image:url("bb.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    
-}
-.parainbanner{
-    font-size: 1.5rem;
-    font-family: 'Ariel';
-    padding: 2.5% 10%;
-   
-    background-color:rgba(0,0,0,0.5);
-    color:white;
-    
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2019, 8:12:58 AM
+    Author     : urk17cs275
+*/
 
-}
-.banner-para{
-    
-}
-.tb div{
-  margin:0.5%;
- display: inline-block;  
-
-}
-.tb1{
-    background-image: url('tb1.jpg');
-    width: 430px;
-    height:150px;
-    background-position: center center;
-    text-align: center; 
-}
-.tb2{
-    background-image: url('tb2.jpg');
-     width: 430px;
-    height:150px;
-    background-position: center center;
-    text-align: center; 
-}
-.tb3{
-    background-image: url('tb3.jpg');
-     width: 430px;
-    height:150px;
-    background-position: center center;
-    text-align: center; 
-}
-.tpara{
-    background-color: rgba(0,0,0,0.8);
-    color:white;
-}
+body{
+                margin:0;
+                background-color: white;
+                font-family: 'arial';
+            }
+            table{
+                text-align: center;
+               
+                
+            }
+            td a{
+                width:100%;
+                height: 100%;
+               
+            }
+            td{
+                 padding:1% 2%;
+            }
+            nav td:hover{
+                background-color: grey;
+                transition-duration: 0.5s;
+                
+            }
+            nav td a{
+                text-decoration: none;
+                color:black;
+            }
+            nav{
+                position: fixed;
+                top:0;
+                width:100%;
+                margin-bottom: 2%;
+                 background-color: #eba134;
+                 
+            }
+            .start{
+                margin:5%;
+            }
+            input{
+                margin:1%;
+            }
+            .cpy{
+                position:absolute;
+                bottom:1%;
+                margin:auto;
+                left:40%;
+                
+            }
+            body{
+                text-align: center;
+            }
+       
