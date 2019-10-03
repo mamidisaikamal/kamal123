@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ex 6:urk17cs253</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link href="ex6css.css" rel="stylesheet" type="text/css"/>
+  <body>
+         <div class="topnav">
+  <a href="clock.html">Digital clock</a>
+  <a href="dynaback.html">Dynamic Background</a>
+  <a href="hoverfunction.html">hover function</a>
+  <a href="moving_car.html">car moving</a>
+   <a href="form6.html">Student Form</a>
+</div>
+    
+    
+            
+        <fieldset style="border-radius: 50px;">
+            <h2><legend style="text-align: center;" >dynamic background</legend></h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           <script>
+            setInterval(function(){
+                var x = (Math.random()*255);
+                var y = (Math.random()*255);
+                var z = (Math.random()*255);
+                document.querySelector('fieldset').style='background-color:rgb('+x+','+y+','+z+');transition-duration:0.5s;';
+            },700);
+        </script>    
+            
+            </fieldset>
+        
+        </body>
+    
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="ex6css.css" rel="stylesheet" type="text/css"/>
+    
+    
+    
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+</head>
+
+
+<body onload="startTime()">
+ 
+      <div class="topnav">
+  <a href="clock.html">Digital clock</a>
+  <a href="dynaback.html">Dynamic Background</a>
+  <a href="hoverfunction.html">hover function</a>
+  <a href="moving_car.html">car moving</a>
+   <a href="form6.html">Student Form</a>
+</div>
+    
+    <h1 ><center>  <div id="txt"></div></center</h1>
+</body>
+</html>

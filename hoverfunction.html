@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ex6: urk17cs253</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ex6css.css" rel="stylesheet" type="text/css"/>
+    <style>
+            #md{
+                position:absolute;
+                top:30%;
+                width:100%;
+            }
+        </style>
+    </head>
+     
+    <body>
+        <div class="topnav">
+  <a href="clock.html">Digital clock</a>
+  <a href="dynaback.html">Dynamic Background</a>
+  <a href="hoverfunction.html">hover function</a>
+  <a href="moving_car.html">car moving</a>
+   <a href="form6.html">Student Form</a>
+</div>
+        
+        <div id='md' style='text-align: center;'><p style='font-size:3rem;transition:1s;'>touch me here</p></div>
+        <div class='cpyr'><center>&copy;</center></div>
+        <script>
+            document.getElementById('md').addEventListener('mouseover',function(){
+               document.querySelector('#md p').style='font-size:6rem;transition-duration:0.5s;';
+            });
+            document.getElementById('md').addEventListener('mouseout',function(){
+               document.querySelector('#md p').style='font-size:3rem;transition-duration:0.5s;';
+            });
+        </script>
+    </body>
+</html>

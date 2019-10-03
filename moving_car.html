@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html> <html>
+    <head> 
+        <title>ex 6: urk17cs253</title>   
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initialscale=1.0">    
+        <script src="style.js" type="text/javascript"></script>
+        <link href="ex6css.css" rel="stylesheet" type="text/css"/>
+          <style> 
+              #d1 {      
+                  width:  300px;   
+                  height: 200px;  
+                  background-image: url("images.png");
+                  position: relative;    
+                  border-radius:50%;   
+              }     
+          </style>
+    </head> 
+    <body> 
+         <div class="topnav">
+  <a href="clock.html">digital clock</a>
+  <a href="dynaback.html">Dynamic Background</a>
+  <a href="hoverfunction.html">hover function</a>
+  <a href="moving_car.html">car moving</a>
+   <a href="form6.html">Student Form</a>
+</div>
+        <script>
+    var timer;
+    var element;
+    var i = 0;
+    function move(){ 
+    element = document.getElementById("d1"); 
+    var pos=parseInt(element.style.left);
+    console.log(pos); 
+    element.style.left = pos +10+"px"; 
+    timer=setTimeout(move,100);
+    } function stop(){ 
+    clearTimeout(timer);
+    }
+    </script>
+
+  <div id="d1" style="left:10px;background-color:black;">
+      
+  </div>        <br><br>    
+  <button class="btn" onclick="move()">start</button>   
+  <button class="btn" onclick="stop()">stop</button> 
+ 
+    </body>
+</html>
+
